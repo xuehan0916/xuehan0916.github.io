@@ -1,0 +1,55 @@
+baseURL = "https://xuehan0916.github.io/"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh"
+title = "Hanxue's Blog"
+theme = "PaperMod"
+[pagination]
+  pagerSize = 5
+
+[params]
+  env = "production"
+  description = "个人博客 - AI、技术与学习"
+  author = "Hanxue"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = true
+
+  [params.homeInfoParams]
+    Title = "Hi, Welcome"
+    Content = "分享 AI 应用开发、技术学习与实践心得"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/hanxue"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 20
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 30
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = "monokai"
